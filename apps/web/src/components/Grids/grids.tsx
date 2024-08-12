@@ -1,7 +1,7 @@
 import { env } from "@/env";
 import { getImage } from "@/storage";
 import { api } from "@/utils/api";
-import { type Grid } from "@prisma/client";
+import { type Grid } from "@repo/db";
 import { Copy } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
