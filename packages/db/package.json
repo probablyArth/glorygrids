@@ -6,7 +6,8 @@
     "db:generate": "pnpm dlx prisma generate",
     "db:push": "pnpm dlx  prisma db push --skip-generate",
     "db:studio": "pnpm dlx prisma studio",
-    "db:migrate": "pnpm dlx prisma migrate dev"
+    "db:migrate": "pnpm dlx prisma migrate dev",
+    "postinstall": "pnpm dlx prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^5.14.0",
