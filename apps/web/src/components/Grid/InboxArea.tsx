@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import React, { type FC } from "react";
 import { useInboxContext } from "./InboxContext";
-import type { TextTestimonial } from "@prisma/client";
+import type { TextTestimonial } from "@repo/db/client";
 import { api } from "@/utils/api";
 import {
   Card,

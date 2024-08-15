@@ -17,5 +17,6 @@
   },
   "prisma": {
     "schema": "./prisma/schema.prisma"
-  }
+  },
+  "types": "dist/index.d.ts"
 }
