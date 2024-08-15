@@ -1,4 +1,4 @@
-import { TextTestimonial } from "@repo/db";
+import { TextTestimonial } from "@prisma/client";
 import React, { FC } from "react";
 import {
   Card,

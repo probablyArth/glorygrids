@@ -1,20 +1,19 @@
 {
   "name": "@repo/db",
   "version": "0.0.0",
+  "main": "index.js",
   "scripts": {
-    "db:generate": "prisma generate",
-    "db:push": "prisma db push --skip-generate",
-    "db:studio": "prisma studio",
-    "db:migrate": "prisma migrate dev"
+    "db:generate": "pnpm dlx prisma generate",
+    "db:push": "pnpm dlx  prisma db push --skip-generate",
+    "db:studio": "pnpm dlx prisma studio",
+    "db:migrate": "pnpm dlx prisma migrate dev"
   },
   "dependencies": {
-    "@prisma/client": "^5.14.0"
-  },
-  "devDependencies": {
-    "prisma": "^5.14.0"
+    "@prisma/client": "^5.14.0",
+    "prisma": "5.14.0"
   },
   "exports": {
-    ".": "./src/index.ts"
+    "./client": "./src/index.ts"
   },
   "prisma": {
     "schema": "./prisma/schema.prisma"

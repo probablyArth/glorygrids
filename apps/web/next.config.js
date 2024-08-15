@@ -3,7 +3,6 @@
  * for Docker builds.
  */
 if (!process.env.SKIP_ENV_VALIDATION) {
-  console.log(process.env);
   await import("./src/env.js");
 }
 
