@@ -308,10 +308,9 @@ const NewGrid = () => {
               name="icon"
               render={({}) => (
                 <FormItem>
-                  <FormLabel>Grid Title</FormLabel>
+                  <FormLabel>Grid Icon</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="shadcn"
                       onChange={(e) => {
                         const file = e.target.files?.item(0) as unknown as File;
                         form.setValue("icon", file);
@@ -319,12 +318,8 @@ const NewGrid = () => {
                       }}
                       type="file"
                       accept="image/*"
-                      value={""}
                     />
                   </FormControl>
-                  <FormDescription>
-                    Give your grid a title that describes its purpose.
-                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
