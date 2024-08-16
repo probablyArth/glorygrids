@@ -13,7 +13,7 @@ import { StarIcon } from "lucide-react";
 
 const GridItem: FC<{ t: TextTestimonial }> = ({ t }) => {
   return (
-    <Card className="max-w-[300px]">
+    <Card className="h-full max-w-[300px]">
       <CardHeader>
         <CardTitle>{t.name}</CardTitle>
         <div className="flex">
@@ -31,7 +31,9 @@ const GridItem: FC<{ t: TextTestimonial }> = ({ t }) => {
         </div>
       </CardHeader>
       <CardContent>
-        <CardDescription>{t.content}</CardDescription>
+        <CardDescription className="text-wrap break-words">
+          {t.content}
+        </CardDescription>
       </CardContent>
       <CardFooter>{t.createdAt.toDateString()}</CardFooter>
     </Card>
