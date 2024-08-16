@@ -11,6 +11,7 @@ export const testimonialsRouter = createTRPCRouter({
             slug: input.slug,
           },
           hasPublicConsent: true,
+          liked: true,
         },
       });
 
