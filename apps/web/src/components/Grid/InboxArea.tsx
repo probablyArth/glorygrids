@@ -111,8 +111,8 @@ const InboxArea = () => {
   }
 
   return (
-    <ScrollArea className="p-4">
-      <div className="flex flex-col gap-4">
+    <ScrollArea className="w-full p-4">
+      <div className="flex w-full flex-col gap-4">
         {data.map((testimonial, idx) => (
           <Testimonial data={testimonial} key={idx} />
         ))}
