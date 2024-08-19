@@ -9,12 +9,17 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { env } from "@/env";
 
-export default function GenerateEmbedButton() {
+export default function GenerateEmbedButton({
+  gridSlug,
+}: {
+  gridSlug: string;
+}) {
   const [embedCode, setEmbedCode] = useState("");
 
   const generateEmbedCode = () => {
-    const code = `<iframe src="https://your-app-url.com/embed" width="100%" height="500" frameborder="0"></iframe>`;
+    const code = `<iframe src="${env.NEXT_PUBLIC_EMBEDS_CLIENT_BASE_URL}/${gridSlug}" width="100%" height="500" frameborder="0"></iframe>`;
     setEmbedCode(code);
   };
 

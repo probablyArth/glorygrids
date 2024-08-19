@@ -40,32 +40,32 @@ const GridDashboardPage = () => {
   return (
     <Card className="h-full">
       <CardHeader>
-        <div className="flex items-center gap-4">
-          <Image
-            src={getImage(data.icon?.path as unknown as string)}
-            alt={data.name}
-            width={80}
-            height={80}
-            className="h-[80px] w-[80px] rounded-full border-2 shadow-sm"
-          />
-          <div className="flex flex-col justify-between gap-2">
-            <CardTitle>{data.name}</CardTitle>
-            <CardDescription>
-              <div className="flex">
-                Grid public URL: &nbsp;
-                <a
-                  href={`${env.NEXT_PUBLIC_CLIENT_BASE_URL}/${data.slug}`}
-                  target="_blank"
-                  className="underline"
-                >
-                  {env.NEXT_PUBLIC_CLIENT_BASE_URL}/{data.slug}
-                </a>
-              </div>
-            </CardDescription>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <Image
+              src={getImage(data.icon?.path as unknown as string)}
+              alt={data.name}
+              width={80}
+              height={80}
+              className="h-[80px] w-[80px] rounded-full border-2 shadow-sm"
+            />
+            <div className="flex flex-col justify-between gap-2">
+              <CardTitle>{data.name}</CardTitle>
+              <CardDescription>
+                <div className="flex">
+                  Grid public URL: &nbsp;
+                  <a
+                    href={`${env.NEXT_PUBLIC_CLIENT_BASE_URL}/${data.slug}`}
+                    target="_blank"
+                    className="underline"
+                  >
+                    {env.NEXT_PUBLIC_CLIENT_BASE_URL}/{data.slug}
+                  </a>
+                </div>
+              </CardDescription>
+            </div>
           </div>
-          <div>
-            <GenerateEmbedButton />
-          </div>
+          <GenerateEmbedButton gridSlug={slug} />
         </div>
       </CardHeader>
       <Separator />
