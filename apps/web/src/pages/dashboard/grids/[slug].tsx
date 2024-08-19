@@ -15,6 +15,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import InboxContextProvider from "@/components/Grid/InboxContext";
 import InboxArea from "@/components/Grid/InboxArea";
+import GenerateEmbedButton from "@/components/GenerateEmbedButton";
 
 const GridDashboardPage = () => {
   const router = useRouter();
@@ -61,6 +62,9 @@ const GridDashboardPage = () => {
                 </a>
               </div>
             </CardDescription>
+          </div>
+          <div>
+            <GenerateEmbedButton />
           </div>
         </div>
       </CardHeader>
