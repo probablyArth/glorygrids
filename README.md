@@ -4,6 +4,8 @@ live link - https://glorygrids.vercel.app
 review this product - https://glorygrids.vercel.app/glory-grids
 
 # Tech Stack
+- TurboRepo
+- typescript
 - NextJS
 - TailwindCSS with shadcn
 - Prisma and tRPC
