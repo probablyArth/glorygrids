@@ -1,6 +1,10 @@
 # Glory grids
 collect and setup testimonials for your product!
+
+demo link - https://www.loom.com/share/6633f1b45a7a4786a58d6cf260881be4?sid=5b1891cb-f655-4d22-ae44-2f08d186eb96
+
 live link - https://glorygrids.vercel.app
+
 review this product - https://glorygrids.vercel.app/glory-grids
 
 # Tech Stack
